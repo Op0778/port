@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/internStyle.css";
-import image from "../assets/atm.jpg";
+import image from "../assets/rsun.jpg";
 
 const internData = [
   {
