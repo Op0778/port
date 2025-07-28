@@ -62,6 +62,7 @@ const Contact = () => {
     <>
       <h1 className="title">Contact</h1>
       <div className="contact">
+        <div></div>
         <form onSubmit={handleSubmit}>
           <input type="hidden" name="access_key" value={formData.access_key} />
           <input

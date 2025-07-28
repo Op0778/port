@@ -38,6 +38,23 @@
 strong:hover {
   cursor: none;
 }
+.typewriter {
+  font-family: monospace;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: omprakash 4s steps(22) forwards;
+}
+
+@keyframes omprakash {
+  from {
+    width: 0;
+  }
+  to {
+    width: 9ch; /* Adjust this based on character length */
+  }
+}
 
 .about-img {
   padding: 20px;
