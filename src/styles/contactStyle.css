@@ -1,0 +1,89 @@
+.contact {
+  padding: 2rem;
+  background-color: #89cff3;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+input {
+  display: flex;
+  width: 500px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+  gap: 100px;
+}
+input[type="submit"] {
+  width: 250px;
+  justify-content: center;
+  background-color: #89cff3;
+  border-radius: 10px;
+}
+input[type="submit"]:hover {
+  width: 250px;
+  justify-content: center;
+  background-color: #119be0;
+  border-radius: 10px;
+  color: #f8fafc;
+}
+textarea {
+  display: flex;
+  width: 500px;
+  margin: 10px;
+  gap: 100px;
+  border-radius: 10px;
+}
+input::placeholder,
+textarea::placeholder {
+  color: yellowgreen;
+}
+
+/* dark */
+body.dark .contact {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
+}
+body.dark input[type="submit"] {
+  background-color: #89cff3;
+}
+body.dark input[type="submit"]:hover {
+  background-color: #334155;
+}
+
+/* mobile */
+@media screen and (max-width: 520px) {
+  form {
+    border: 1px solid black(209, 33, 33);
+    border-radius: 10px;
+    width: 90vw;
+  }
+  input {
+    display: flex;
+    width: 80vw;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    gap: 100px;
+  }
+  input[type="submit"] {
+    width: 250px;
+    justify-content: center;
+    background-color: #89cff3;
+    border-radius: 10px;
+  }
+  textarea {
+    display: flex;
+    width: 80vw;
+    margin: 10px;
+    gap: 100px;
+  }
+}

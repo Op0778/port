@@ -1,0 +1,47 @@
+.intern {
+  padding: 2rem;
+  background-color: #89cff3;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  height: fit-content;
+}
+
+.intern p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  margin-right: 30px;
+}
+.intern img {
+  width: 400px;
+}
+
+/* dark */
+body.dark .intern {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
+}
+
+/* mobile */
+@media screen and (max-width: 520px) {
+  .intern {
+    background-color: #89cff3;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: block;
+    height: fit-content;
+    margin: 10px;
+  }
+  .intern p {
+    font-size: 20px;
+  }
+  .intern img {
+    width: 300px;
+    height: 300px;
+  }
+}

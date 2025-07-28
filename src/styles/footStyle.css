@@ -1,0 +1,29 @@
+.foot {
+  background-color: #00a9ff;
+  border: 1px solid black;
+  border-radius: 10px;
+  /* display: flex;
+  justify-content: space-between; */
+  height: fit-content;
+  margin: 10px;
+}
+.bottom p {
+  text-align: center;
+}
+.icon {
+  margin: 20px;
+  font-size: 28px;
+}
+.icon a {
+  color: black;
+}
+
+/* dark */
+body.dark .foot {
+  background-color: #1e293b;
+  color: #f8fafc;
+  border-color: #334155;
+}
+body.dark .icon a {
+  color: azure;
+}
