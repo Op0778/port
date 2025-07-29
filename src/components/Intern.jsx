@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../styles/internStyle.css";
 import image from "../assets/rsun.jpg";
 
@@ -12,13 +12,41 @@ const internData = [
 ];
 
 const Intern = () => {
+  const internRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      {
+        threshold: 0.1,
+      }
+    );
+
+    if (internRef.current) {
+      observer.observe(internRef.current);
+    }
+
+    return () => {
+      if (internRef.current) observer.unobserve(internRef.current);
+    };
+  }, []);
+
   return (
     <>
       <h1 className="title">Internship</h1>
       {internData.map((inten, id) => (
         <div key={id}>
           <h1 className="title">{inten.internTitle}</h1>
-          <div className="align intern">
+          <div
+            className={`align intern ${isVisible ? "animate" : ""}`}
+            ref={internRef}
+          >
             <p>{inten.discription}</p>
             <img src={inten.picture} alt={inten.internTitle} />
           </div>
