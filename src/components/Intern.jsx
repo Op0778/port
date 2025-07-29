@@ -44,10 +44,10 @@ const Intern = () => {
         <div key={id}>
           <h1 className="title">{inten.internTitle}</h1>
           <div
-            className={`align intern ${isVisible ? "animate" : ""}`}
+            
             ref={internRef}
           >
-            <p>{inten.discription}</p>
+            <p className={`align intern ${isVisible ? "animate" : ""}`}>{inten.discription}</p>
             <img src={inten.picture} alt={inten.internTitle} />
           </div>
         </div>
