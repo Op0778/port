@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useRef, useEffect, useState } from "react";
 import "../styles/internStyle.css";
 import image from "../assets/rsun.jpg";
 
@@ -16,24 +16,24 @@ const Intern = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    const currentRef = internRef.current;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
-          observer.unobserve(entry.target);
+          observer.unobserve(entry.target); // Only animate once
         }
       },
-      {
-        threshold: 0.1,
-      }
+      { threshold: 0.2 }
     );
 
-    if (internRef.current) {
-      observer.observe(internRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (internRef.current) observer.unobserve(internRef.current);
+      if (currentRef) observer.unobserve(currentRef);
     };
   }, []);
 
@@ -43,12 +43,15 @@ const Intern = () => {
       {internData.map((inten, id) => (
         <div key={id}>
           <h1 className="title">{inten.internTitle}</h1>
-          <div
-            className = "align intern"
-            ref={internRef}
-          >
-            <p className={`${isVisible ? "animate" : ""}`}>{inten.discription}</p>
-            <img src={inten.picture} alt={inten.internTitle} />
+          <div className="align intern" ref={internRef}>
+            <p className={isVisible ? "animated-box" : ""}>
+              {inten.discription}
+            </p>
+            <img
+              src={inten.picture}
+              alt={inten.internTitle}
+              className={isVisible ? "animated-box-img" : ""}
+            />
           </div>
         </div>
       ))}

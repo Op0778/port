@@ -16,27 +16,7 @@
   font-size: larger;
   margin-right: 30px;
 }
-/* internStyle.css */
-.intern {
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: all 0.5s ease-out;
-}
 
-.intern.animate {
-  animation: slideInLeftToRight 1s ease-out forwards;
-}
-
-@keyframes slideInLeftToRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
 .intern img {
   width: 400px;
 }
@@ -64,5 +44,41 @@ body.dark .intern {
   .intern img {
     width: 300px;
     height: 300px;
+  }
+}
+
+/* animation */
+.animated-box {
+  position: relative;
+  opacity: 0;
+  transform: translate(100px);
+  animation: slideLeftToRight 1s ease-out forwards;
+}
+@keyframes slideLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* animation */
+.animated-box-img {
+  position: relative;
+  opacity: 0;
+  transform: translate(100px);
+  animation: slideRightLeftTo 1s ease-out forwards;
+}
+@keyframes slideRightLeftTo {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
   }
 }
