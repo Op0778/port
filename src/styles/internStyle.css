@@ -16,6 +16,27 @@
   font-size: larger;
   margin-right: 30px;
 }
+/* internStyle.css */
+.intern {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.5s ease-out;
+}
+
+.intern.animate {
+  animation: slideInLeftToRight 1s ease-out forwards;
+}
+
+@keyframes slideInLeftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 .intern img {
   width: 400px;
 }
