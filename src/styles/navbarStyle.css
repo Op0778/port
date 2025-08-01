@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  background-color: #00a9ff;
+  background-color: #b49bb9;
   position: sticky;
   top: 0px;
   margin: 10px;
@@ -34,7 +34,7 @@
   cursor: pointer;
   color: #334155;
   font-size: 1.1rem;
-  border-bottom: 5px solid yellowgreen;
+  border-bottom: 5px solid #dcd0ff;
 }
 
 /* Theme toggle button */

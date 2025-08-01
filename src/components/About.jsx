@@ -26,7 +26,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className="bg">
+    <div className="">
       <h1 className="title">About</h1>
       <div className="align">
         <div className="about">

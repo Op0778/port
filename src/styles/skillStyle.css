@@ -10,7 +10,7 @@
 
 .donut-bg {
   fill: none;
-  stroke: #e5ebe7;
+  stroke: #dcd0ff;
   stroke-width: 16;
 }
 
@@ -38,11 +38,11 @@
 .donut-label span {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #3b82f6;
+  color: #dcd0ff;
 }
 
 .skill-place {
-  background-color: #89cff3;
+  background-color: #b49bb9;
   display: flex;
   justify-content: center;
   border: 1px solid black;

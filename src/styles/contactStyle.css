@@ -1,6 +1,6 @@
 .contact {
   padding: 2rem;
-  background-color: #89cff3;
+  background-color: #b49bb9;
   border: 1px solid black;
   border-radius: 10px;
   margin: 10px;
@@ -24,15 +24,15 @@ input {
 input[type="submit"] {
   width: 250px;
   justify-content: center;
-  background-color: #89cff3;
+  background-color: #b49bb9;
   border-radius: 10px;
 }
 input[type="submit"]:hover {
   width: 250px;
   justify-content: center;
-  background-color: #119be0;
+  background-color: #dcd0ff;
   border-radius: 10px;
-  color: #f8fafc;
+  color: black;
 }
 textarea {
   display: flex;
@@ -43,7 +43,7 @@ textarea {
 }
 input::placeholder,
 textarea::placeholder {
-  color: yellowgreen;
+  color: #b49bb9;
 }
 
 /* dark */
@@ -53,7 +53,8 @@ body.dark .contact {
   border-color: #334155;
 }
 body.dark input[type="submit"] {
-  background-color: #89cff3;
+  background-color: #334155;
+  color: #ffffff;
 }
 body.dark input[type="submit"]:hover {
   background-color: #334155;
@@ -63,7 +64,7 @@ body.dark input[type="submit"]:hover {
 @media screen and (max-width: 520px) {
   .contact {
     padding: 2rem;
-    background-color: #89cff3;
+    background-color: #b49bb9;
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
@@ -88,7 +89,7 @@ body.dark input[type="submit"]:hover {
   input[type="submit"] {
     width: 250px;
     justify-content: center;
-    background-color: #89cff3;
+    background-color: #b49bb9;
     border-radius: 10px;
   }
   textarea {

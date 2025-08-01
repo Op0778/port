@@ -1,6 +1,6 @@
 .intern {
   padding: 2rem;
-  background-color: #89cff3;
+  background-color: #b49bb9;
   border: 1px solid black;
   border-radius: 10px;
   margin: 10px;
@@ -31,7 +31,7 @@ body.dark .intern {
 /* mobile */
 @media screen and (max-width: 520px) {
   .intern {
-    background-color: #89cff3;
+    background-color: #b49bb9;
     border: 1px solid black;
     border-radius: 10px;
     display: block;

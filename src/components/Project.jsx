@@ -3,16 +3,34 @@ import "../styles/projectStyle.css";
 import port from "../assets/portimg.jpg";
 import clg from "../assets/clgapply1.jpeg";
 import atm from "../assets/atm.jpg";
+import admin from "../assets/admin.png";
+import insta from "../assets/insta.jfif";
 
 const Projects = () => {
   const projectData = [
     {
+      title: "Admin Dashboard",
+      description:
+        "I built dynamic, responsive websites using PHP, HTML, CSS, JavaScript, and MySQL, focusing on secure back-end development and seamless database integration. Working within an agile team, I contributed to real-time web projects while following secure coding standards, version control with Git, and clean code practices. I also gained practical experience in website deployment, server-side scripting, and debugging.",
+      image: admin,
+      tags: ["HTML", "CSS", "PHP", "MySQL"],
+      link: "https://dashlogin.infinityfreeapp.com/",
+    },
+    {
+      title: "Instagram Clone",
+      description:
+        "I developed a responsive Instagram clone using React.js, HTML5, CSS3, and JavaScript, featuring a component-based architecture and state management. Mock post data was handled using JSON, with a strong focus on dynamic content rendering, modular styling, and a smooth, user-friendly interface across devices.",
+      image: insta,
+      tags: ["React", "CSS", "JSON"],
+      link: "",
+    },
+    {
       title: "Personal Portfolio",
       description:
-        "This mini project involves creating my own Portfolio. The portfolio includes my personal details, skills, and projects, along with the source code for each project. The portfolio is developed using HTML, CSS, and JavaScript to provide a functional and interactive presentation.",
+        "This mini project involves creating my own Portfolio. The portfolio includes my personal details, skills, and projects, along with the source code for each project. The portfolio is developed using HTML, CSS, and ReactJS to provide a functional and interactive presentation.",
       image: port,
       tags: ["React", "API", "UI/UX"],
-      link: "https://prakashport.netlify.app/",
+      link: "https://port-six-umber.vercel.app/",
     },
     {
       title: "College Application Management",
