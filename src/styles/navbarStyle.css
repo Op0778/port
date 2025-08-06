@@ -6,7 +6,7 @@
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  background-color: #b49bb9;
+  background-color: #f6c9f0;
   position: sticky;
   top: 0px;
   margin: 10px;
@@ -26,15 +26,15 @@
   margin: 0 20px;
   transition: font-size 0.3s ease;
   font-weight: 500;
-  color: white;
+  color: #3a3a3a;
   padding: 10px;
 }
 
 .top-right nav span:hover {
   cursor: pointer;
-  color: #334155;
+  color: #f8f8f8;
   font-size: 1.1rem;
-  border-bottom: 5px solid #dcd0ff;
+  border-bottom: 2px solid #b49bb9;
 }
 
 /* Theme toggle button */
@@ -78,11 +78,12 @@ body.dark .top-left span {
 }
 
 body.dark .top-right nav span {
-  color: #ccc;
+  color: #f472b6;
 }
 
 body.dark .top-right nav span:hover {
-  color: #89cff3;
+  color: #f0f0f0;
+  border-bottom: 2px solid #f472b6;
 }
 
 body.dark .theme-toggle button {
@@ -112,6 +113,7 @@ body.dark .theme-toggle button:hover {
 @media (max-width: 520px) {
   .menu-button {
     display: block;
+    color: #111;
   }
 
   .nav-theme-wrapper {
@@ -119,7 +121,7 @@ body.dark .theme-toggle button:hover {
     position: absolute;
     top: 60px;
     right: 10px;
-    background-color: #00a9ff;
+    background-color: #f6c9f0;
     border: 1px solid black;
     border-radius: 10px;
     flex-direction: column;
@@ -148,6 +150,7 @@ body.dark .theme-toggle button:hover {
     padding: 10px;
     margin: 0;
     text-align: left;
+    color: #121212;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   }
 

@@ -5,13 +5,13 @@
   direction: row;
 }
 .title {
-  color: #334155;
+  color: #b49bb9;
   text-align: center;
   margin-bottom: 20px;
 }
 
 .about {
-  background-color: #b49bb9;
+  background-color: #f6c9f0;
   border: 1px solid black;
   border-radius: 10px;
   display: flex;
@@ -28,7 +28,7 @@
   font-size: 3rem;
 }
 .about-me strong {
-  color: #f5cdf1;
+  color: #b49bb9;
 }
 strong:hover {
   cursor: none;
@@ -66,14 +66,14 @@ strong:hover {
 }
 
 .about-img img:hover {
-  filter: drop-shadow(1px 1px 20px #dcd0ff);
+  filter: drop-shadow(1px 1px 20px #b49bb9);
   transform: scale(1.1);
   box-shadow: 0 12px 24px rgba(0, o, 0, 0.1);
 }
 
 body.light {
-  background-color: #f5cdf7;
-  color: #fff;
+  background-color: #f5edf7;
+  color: black;
 }
 /* dark  */
 body.dark .about {
@@ -97,7 +97,7 @@ body.dark .about-me strong {
 /* mobile phone */
 @media screen and (max-width: 520px) {
   .about {
-    background-color: #b49bb9;
+    background-color: #f6c9f0;
     border: 1px solid black;
     border-radius: 10px;
     display: block;

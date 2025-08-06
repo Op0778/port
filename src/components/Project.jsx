@@ -22,7 +22,6 @@ const Projects = () => {
         "I developed a responsive Instagram clone using React.js, HTML5, CSS3, and JavaScript, featuring a component-based architecture and state management. Mock post data was handled using JSON, with a strong focus on dynamic content rendering, modular styling, and a smooth, user-friendly interface across devices.",
       image: insta,
       tags: ["React", "CSS", "JSON"],
-      link: "",
     },
     {
       title: "Personal Portfolio",

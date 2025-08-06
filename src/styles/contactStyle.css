@@ -1,6 +1,6 @@
 .contact {
   padding: 2rem;
-  background-color: #b49bb9;
+  background-color: #f6c9f0;
   border: 1px solid black;
   border-radius: 10px;
   margin: 10px;
@@ -24,7 +24,7 @@ input {
 input[type="submit"] {
   width: 250px;
   justify-content: center;
-  background-color: #b49bb9;
+  background-color: #f6c9f0;
   border-radius: 10px;
 }
 input[type="submit"]:hover {
@@ -64,7 +64,7 @@ body.dark input[type="submit"]:hover {
 @media screen and (max-width: 520px) {
   .contact {
     padding: 2rem;
-    background-color: #b49bb9;
+    background-color: #f6c9f0;
     border: 1px solid black;
     border-radius: 10px;
     margin: 10px;
@@ -89,7 +89,7 @@ body.dark input[type="submit"]:hover {
   input[type="submit"] {
     width: 250px;
     justify-content: center;
-    background-color: #b49bb9;
+    background-color: #f6c9f0;
     border-radius: 10px;
   }
   textarea {

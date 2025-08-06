@@ -38,11 +38,11 @@
 .donut-label span {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #dcd0ff;
+  color: black;
 }
 
 .skill-place {
-  background-color: #b49bb9;
+  background-color: #f6c9f0;
   display: flex;
   justify-content: center;
   border: 1px solid black;
