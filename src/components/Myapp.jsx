@@ -5,6 +5,7 @@ import Skill from "../components/Skill";
 import Project from "../components/Project";
 import Intern from "../components/Intern";
 import Contact from "../components/Contact";
+import Footer from "../components/Footer";
 
 function App() {
   const aboutRef = useRef(null);
@@ -38,6 +39,10 @@ function App() {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <Footer
+        scrollToSection={scrollToSection}
+        refs={{ aboutRef, skillRef, projectRef, internRef, contactRef }}
+      />
     </>
   );
 }

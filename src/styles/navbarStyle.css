@@ -166,4 +166,7 @@ body.dark .theme-toggle button:hover {
   .theme-toggle button {
     width: 100%;
   }
+  body.dark .menu-button {
+    color: whitesmoke;
+  }
 }

@@ -1,13 +1,11 @@
 import React, { useState } from "react";
 import "../styles/contactStyle.css";
-import Footer from "./Footer";
-
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
-    access_key: "b942a176-991d-465b-ab68-6f28353f4949", // Replace with your Web3Forms access key
+    access_key: "b942a176-991d-465b-ab68-6f28353f4949",
   });
 
   const [result, setResult] = useState("");
@@ -92,7 +90,6 @@ const Contact = () => {
           <p>{result}</p>
         </form>
       </div>
-      <Footer />
     </>
   );
 };
