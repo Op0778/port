@@ -39,7 +39,6 @@ const Contact = () => {
         setResult(json.message || "Something went wrong!");
       }
 
-      // Reset form
       setFormData({
         name: "",
         email: "",

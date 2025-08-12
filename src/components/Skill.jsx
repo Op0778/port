@@ -1,4 +1,3 @@
-import React from "react";
 import SkillDonut from "./SkillDonut";
 
 const skills = [
@@ -16,7 +15,6 @@ const Skills = () => {
   return (
     <>
       <h1 className="title">Skills</h1>
-      {/* align class is aboutStyles */}
       <div className="skill-place align">
         <div className="skill">
           {skills.map((s, idx) => (

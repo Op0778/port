@@ -9,18 +9,17 @@ const SkillDonut = ({ skill, percent, color = "#3b82f6" }) => {
   const circleRef = useRef(null);
   const chartRef = useRef(null);
 
-  // Use Intersection Observer to detect visibility
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setInView(true);
-            observer.disconnect(); // Only run once
+            observer.disconnect();
           }
         });
       },
-      { threshold: 0.5 } // 50% visible
+      { threshold: 0.5 }
     );
 
     if (chartRef.current) {
@@ -30,7 +29,6 @@ const SkillDonut = ({ skill, percent, color = "#3b82f6" }) => {
     return () => observer.disconnect();
   }, []);
 
-  // Animate only when visible
   useEffect(() => {
     if (!inView) return;
 

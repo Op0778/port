@@ -27,7 +27,6 @@ function Navbar({ scrollToSection, refs }) {
     document.body.className = theme;
   }, [theme]);
 
-  // Optional: close menu when a nav link is clicked
   const handleNavClick = (ref) => {
     scrollToSection(ref);
     setMenuOpen(false);
