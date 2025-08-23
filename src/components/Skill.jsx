@@ -5,10 +5,11 @@ const skills = [
   { skill: "CSS", percent: 85 },
   { skill: "JavaScript", percent: 75 },
   { skill: "React", percent: 70 },
-  { skill: "Python", percent: 80 },
+  { skill: "MongoDB", percent: 50 },
   { skill: "php", percent: 40 },
-  { skill: "c/c++", percent: 80 },
   { skill: "sql", percent: 40 },
+  { skill: "Python", percent: 80 },
+  { skill: "c/c++", percent: 80 },
 ];
 
 const Skills = () => {

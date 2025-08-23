@@ -34,7 +34,7 @@ strong:hover {
 }
 .typewriter {
   font-family: monospace;
-  display: inline-block;
+  display: inline-flex;
   white-space: nowrap;
   overflow: hidden;
   width: 0;
