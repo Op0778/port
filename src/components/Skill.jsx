@@ -1,28 +1,17 @@
 import SkillDonut from "./SkillDonut";
-import html from "../assets/html.webp";
-import css from "../assets/css.webp";
-import js from "../assets/js.webp";
-import react from "../assets/react.webp";
-import mongo from "../assets/mongodb.webp";
-import php from "../assets/php.webp";
-import sql from "../assets/sql.webp";
-import python from "../assets/python.webp";
-import cpp from "../assets/cpp.webp";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaPhp } from "react-icons/fa";
+import { SiMongodb, SiMysql, SiCplusplus } from "react-icons/si";
 
 const skills = [
-  { skill: "HTML", percent: 90, image: html },
-  {
-    skill: "CSS",
-    percent: 85,
-    image: css,
-  },
-  { skill: "JavaScript", percent: 75, image: js },
-  { skill: "React", percent: 70, image: react },
-  { skill: "MongoDB", percent: 50, image: mongo },
-  { skill: "php", percent: 40, image: php },
-  { skill: "sql", percent: 40, image: sql },
-  { skill: "Python", percent: 80, image: python },
-  { skill: "c/c++", percent: 80, image: cpp },
+  { skill: "HTML", percent: 90, icon: <FaHtml5 size={100} color="#E34F26" /> },
+  { skill: "CSS", percent: 85, icon: <FaCss3Alt size={100} color="#1572B6" /> },
+  { skill: "JavaScript", percent: 75, icon: <FaJs size={100} color="#F7DF1E" /> },
+  { skill: "React", percent: 70, icon: <FaReact size={100} color="#61DAFB" /> },
+  { skill: "MongoDB", percent: 50, icon: <SiMongodb size={100} color="#47A248" /> },
+  { skill: "PHP", percent: 40, icon: <FaPhp size={100} color="#777BB4" /> },
+  { skill: "SQL", percent: 40, icon: <SiMysql size={100} color="#00618A" /> },
+  { skill: "Python", percent: 80, icon: <FaPython size={100} color="#3776AB" /> },
+  { skill: "C/C++", percent: 80, icon: <SiCplusplus size={100} color="#00599C" /> },
 ];
 
 const Skills = () => {
@@ -36,7 +25,7 @@ const Skills = () => {
               key={idx}
               skill={s.skill}
               percent={s.percent}
-              image={s.image}
+              icon={s.icon}
             />
           ))}
         </div>
