@@ -63,11 +63,13 @@ const SkillDonut = ({ skill, percent, icon, color = "#3b82f6" }) => {
           strokeDashoffset={circumference}
         />
       </svg>
+
       <div className="donut-label">
         <h3>{skill}</h3>
         <span>{current}%</span>
-        <div className="donut-icon">{icon}</div>
       </div>
+
+      <div className="donut-icon">{icon}</div>
     </div>
   );
 };
