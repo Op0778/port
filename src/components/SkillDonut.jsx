@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../styles/skillStyle.css";
 
-const SkillDonut = ({ skill, percent, color = "#3b82f6" }) => {
+const SkillDonut = ({ skill, percent, image, color = "#3b82f6" }) => {
   const [current, setCurrent] = useState(0);
   const [inView, setInView] = useState(false);
   const radius = 60;
@@ -66,6 +66,7 @@ const SkillDonut = ({ skill, percent, color = "#3b82f6" }) => {
       <div className="donut-label">
         <h3>{skill}</h3>
         <span>{current}%</span>
+        <img src={image} alt="" />
       </div>
     </div>
   );
