@@ -4,7 +4,7 @@ import { SiMongodb, SiMysql, SiCplusplus } from "react-icons/si";
 
 const skills = [
   { skill: "HTML", percent: 90, icon: <FaHtml5 size={80} color="#E34F26" /> },
-  { skill: "CSS", percent: 85, icon: <FaCss3Alt size={90} color="#1572B6" /> },
+  { skill: "CSS", percent: 85, icon: <FaCss3Alt size={80} color="#1572B6" /> },
   { skill: "JavaScript", percent: 75, icon: <FaJs size={100} color="#F7DF1E" /> },
   { skill: "React", percent: 70, icon: <FaReact size={100} color="#61DAFB" /> },
   { skill: "MongoDB", percent: 50, icon: <SiMongodb size={100} color="#47A248" /> },
