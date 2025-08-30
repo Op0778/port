@@ -3,7 +3,7 @@ import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaPython, FaPhp } from "react-icons/
 import { SiMongodb, SiMysql, SiCplusplus } from "react-icons/si";
 
 const skills = [
-  { skill: "HTML", percent: 90, icon: <FaHtml5 size={100} color="#E34F26" /> },
+  { skill: "HTML", percent: 90, icon: <FaHtml5 size={90} color="#E34F26" /> },
   { skill: "CSS", percent: 85, icon: <FaCss3Alt size={100} color="#1572B6" /> },
   { skill: "JavaScript", percent: 75, icon: <FaJs size={100} color="#F7DF1E" /> },
   { skill: "React", percent: 70, icon: <FaReact size={100} color="#61DAFB" /> },
