@@ -13,6 +13,9 @@
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   font-size: 100px; /* fit nicely inside stroke */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Show icon on hover */
