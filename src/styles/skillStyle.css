@@ -4,24 +4,20 @@
   position: relative;
 }
 
-.donut-chart img {
+.donut-icon {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1;
-  border-radius: 50%;
-  width: 100px;
-  height: 100px;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-.donut-chart:hover img {
-  cursor: pointer;
+.donut-chart:hover .donut-icon {
   opacity: 1;
   visibility: visible;
+  cursor: pointer;
 }
 
 .donut-chart svg {
@@ -79,11 +75,10 @@
   justify-content: center;
   height: fit-content;
   width: 80vw;
-
   margin: 10px;
 }
 
-/* dark */
+/* dark mode */
 body.dark .skill {
   color: #f1f5f9;
 }
@@ -109,13 +104,6 @@ body.dark .skill-place {
 /* mobile */
 @media screen and (max-width: 520px) {
   .skill {
-    display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-    justify-content: center;
-    height: fit-content;
-    width: 80vw;
-    margin: 10px;
   }
 }
