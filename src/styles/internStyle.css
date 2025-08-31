@@ -5,29 +5,35 @@
   border-radius: 10px;
   margin: 10px;
   height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.intern.reverse {
+  flex-direction: row-reverse; /* Even child reversed */
 }
 
 .intern p {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  align-items: center;
+  flex: 1;
   font-size: larger;
   margin-right: 30px;
 }
 
 .intern img {
   width: 400px;
+  flex-shrink: 0;
 }
 
 /* animation */
 .animated-box {
   position: relative;
   opacity: 0;
-  transform: translate(100px);
+  transform: translateX(-100px);
   animation: slideLeftToRight 1s ease-out forwards;
 }
+
 @keyframes slideLeftToRight {
   0% {
     opacity: 0;
@@ -42,9 +48,10 @@
 .animated-box-img {
   position: relative;
   opacity: 0;
-  transform: translate(100px);
+  transform: translateX(100px);
   animation: slideRightLeftTo 1s ease-out forwards;
 }
+
 @keyframes slideRightLeftTo {
   0% {
     opacity: 0;
@@ -66,16 +73,15 @@ body.dark .intern {
 /* mobile */
 @media screen and (max-width: 520px) {
   .intern {
-    background-color: #f6c9f0;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: block;
-    height: fit-content;
-    margin: 10px;
+    flex-direction: column !important; /* Always stacked on mobile */
+    text-align: center;
   }
+
   .intern p {
     font-size: 20px;
+    margin: 0;
   }
+
   .intern img {
     width: 300px;
     height: 300px;
