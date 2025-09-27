@@ -5,9 +5,18 @@ import clg from "../assets/clgapply1.jpeg";
 import atm from "../assets/atm.jpg";
 import admin from "../assets/admin.png";
 import insta from "../assets/insta.jfif";
+import ecommerce from "../assets/ecommerce.jfif";
 
 const Projects = () => {
   const projectData = [
+    {
+      title: "E Commerce",
+      description:
+        "Developed a full-stack E-commerce web application featuring user authentication, product management, cart functionality, and real-time order tracking. The project is built with React.js, Node.js, Express.js, and MongoDB (MERN stack), ensuring scalable and responsive performance. Implemented secure JWT-based authentication, and efficient MongoDB indexing for faster queries. Orders progress through statuses such as Placed, Shipped, Nearby, Out for Delivery, and Delivered, giving users a clear delivery timeline.",
+      image: ecommerce,
+      tags: ["HTML", "CSS", "MongoDB", "Express", "React", "Node"],
+      link: "https://e-commerce-theta-lemon.vercel.app/",
+    },
     {
       title: "Admin Dashboard",
       description:
