@@ -19,6 +19,25 @@
   font-size: 1.2rem;
 }
 
+.navbar .top-left span:after {
+  content: "Frontend Developer";
+  animation: words 5s infinite;
+}
+@keyframes words {
+  0%,
+  33% {
+    content: "Frontend Developer";
+  }
+  34%,
+  66% {
+    content: "Web Developer";
+  }
+  67%,
+  100% {
+    content: "MERN Stack Developer";
+  }
+}
+
 .top-right nav span {
   margin: 0 20px;
   transition: font-size 0.3s ease;

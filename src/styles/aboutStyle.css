@@ -88,6 +88,17 @@ body.dark .about-me strong {
   color: #f472b6;
 }
 
+@media (min-width: 521px) and (max-width: 780px) {
+  .about {
+    background-color: #f6c9f0;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    margin: 10px;
+  }
+}
 /* mobile phone */
 @media screen and (max-width: 520px) {
   .about {

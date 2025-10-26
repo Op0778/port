@@ -35,7 +35,7 @@ function Navbar({ scrollToSection, refs }) {
   return (
     <div className="navbar">
       <div className="top-left">
-        <span className="typewrite">Omprakash DEV</span>
+        <span></span>
       </div>
 
       <div className="menu-button" onClick={toggleMenu}>
