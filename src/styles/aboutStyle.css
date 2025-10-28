@@ -88,31 +88,7 @@ body.dark .about-me strong {
   color: #f472b6;
 }
 
-@media (max-width: 600px) {
-  .about-page {
-    height: 50vh;
-  }
-  .about {
-    background-color: #f6c9f0;
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    height: fit-content;
-    margin: 10px;
-  }
 
-  .about-me p {
-    font-size: 1.5rem;
-  }
-
-  .about-img img {
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-  }
-}
 /* mobile phone */
 @media screen and (max-width: 520px) {
   .about {
