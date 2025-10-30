@@ -1,7 +1,10 @@
+.about-page {
+  height: fit-content;
+}
 .align {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: fit-content;
   direction: row;
 }
 .title {
@@ -113,6 +116,39 @@ body.dark .about-me strong {
   .about-img img {
     height: 300px;
     width: 300px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 521px) and (max-width: 780px) {
+  .about {
+    background-color: #f6c9f0;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    height: fit-content;
+    margin: 10px;
+  }
+
+  .about-me {
+    padding: 20px;
+    align-items: center;
+  }
+
+  .about-me p {
+    font-size: 25px;
+  }
+
+  .about-img {
+    padding: 20px;
+    width: 50vw;
+  }
+
+  .about-img img {
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
     align-items: center;

@@ -123,7 +123,7 @@ body.dark .theme-toggle button:hover {
   align-items: center;
 }
 
-@media (max-width: 520px) {
+@media (max-width: 780px) {
   .menu-button {
     display: block;
     color: #111;

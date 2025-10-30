@@ -70,13 +70,17 @@ body.dark .intern {
   border-color: #334155;
 }
 
-/* @media (min-width: 521px) and (max-width: 780px) {
+@media (min-width: 521px) and (max-width: 780px) {
   .intern p {
     flex: 1;
-    font-size: 12px;
+    font-size: 18px;
     margin-right: 30px;
   }
-} */
+  .intern img {
+    width: 250px;
+    height: 250px;
+  }
+}
 /* mobile */
 @media screen and (max-width: 520px) {
   .intern {
