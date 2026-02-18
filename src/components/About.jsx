@@ -15,7 +15,7 @@ const About = () => {
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.2 },
     );
 
     if (currentRef) observer.observe(currentRef);
@@ -31,7 +31,7 @@ const About = () => {
       <div className="align">
         <div className="about">
           <div className="about-me">
-            <p>
+            <>
               <div>
                 Hello! I'm{" "}
                 <strong
@@ -45,7 +45,7 @@ const About = () => {
               creating engaging and efficient solutions. With a strong
               foundation in web development, I enjoy transforming ideas into
               digital reality.
-            </p>
+            </>
           </div>
           <div className="about-img">
             <img

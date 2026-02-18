@@ -1,14 +1,22 @@
 import React from "react";
 import "../styles/projectStyle.css";
-import port from "../assets/portimg.jpg";
 import clg from "../assets/clgapply1.jpeg";
 import atm from "../assets/atm.jpg";
 import admin from "../assets/admin.png";
 import insta from "../assets/insta.jfif";
 import ecommerce from "../assets/ecommerce.jfif";
+import landingPage from "../assets/frontend.jpg";
 
 const Projects = () => {
   const projectData = [
+    {
+      title: "Landing Page",
+      description:
+        "This project is a fully responsive and visually engaging frontend landing page developed using modern web technologies. It emphasizes clean UI design, smooth navigation, and well-structured layouts to create an intuitive and seamless user experience. Built with a mobile-first approach, the design ensures consistent performance, cross-browser compatibility, and optimal display across desktops, tablets, and smartphones, delivering a professional and engaging digital presence.",
+      image: landingPage,
+      tags: ["HTML", "CSS", "React"],
+      link: "https://landing-page-lac-two-52.vercel.app/",
+    },
     {
       title: "E Commerce",
       description:
@@ -31,14 +39,6 @@ const Projects = () => {
         "I developed a responsive Instagram clone using React.js, HTML5, CSS3, and JavaScript, featuring a component-based architecture and state management. Mock post data was handled using JSON, with a strong focus on dynamic content rendering, modular styling, and a smooth, user-friendly interface across devices.",
       image: insta,
       tags: ["React", "CSS", "JSON"],
-    },
-    {
-      title: "Personal Portfolio",
-      description:
-        "This mini project involves creating my own Portfolio. The portfolio includes my personal details, skills, and projects, along with the source code for each project. The portfolio is developed using HTML, CSS, and ReactJS to provide a functional and interactive presentation.",
-      image: port,
-      tags: ["React", "API", "UI/UX"],
-      link: "https://port-six-umber.vercel.app/",
     },
     {
       title: "College Application Management",
